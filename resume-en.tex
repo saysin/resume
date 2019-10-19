@@ -1,0 +1,207 @@
+% !TEX TS-program = xelatex
+%% Copyright (c) 2019-2020 Donghui Shen <saysin.github.io>
+%% CC BY 4.0 License
+%%
+%% Résumé
+%% ------
+%% A short document (1-2 pages) to sum up the job-related accomplishments
+%% and experience.
+%%
+%% Checklist
+%% ---------
+%% * Contact Information
+%% * Work History / Experience
+%% * Education
+%% * Skills
+%% * Summary & Objective (optional)
+%% * Hobbies & Interests (optional)
+%%
+%% Credits
+%% -------
+%% * CV vs. Resume: What is the Difference? When to Use Which?
+%%   https://uptowork.com/blog/cv-vs-resume-difference
+%% * How to Make a Resume: A Step-by-Step Guide (+30 Examples)
+%%   https://uptowork.com/blog/how-to-make-a-resume
+%% * Entry-Level Resume: Sample and Complete Guide (+20 Examples)
+%%   https://uptowork.com/blog/entry-level-resume-example
+%%
+%% Created: 2020-10-11
+%%
+
+% English version
+\documentclass{resume}
+
+% Adjust icon size (default: same size as the text)
+\iconsize{\Large}
+
+% File information shown at the footer of the last page
+\fileinfo{%
+	\faCopyright{} 2019--2020, Donghui Shen \hspace{0.5em}
+	\creativecommons{by}{4.0} \hspace{0.5em}
+	\githublink{saysin}{resume} \hspace{0.5em}
+	\faEdit{} \today
+}
+
+\name{Donghui}{Shen}
+
+\keywords{Linux, Programming, Python, C, Shell}
+
+% \tagline{\icon{\faBinoculars}} <position-to-look-for>}
+% \tagline{<current-position>}
+
+\photo{5em}{pic.jpg}
+
+\profile{
+	\mobile{132-1610-7661}
+	\email{saysin@163.com}
+	\github{saysin} \\
+  \degree{Ph.D. in Physics}
+  \university{Zhejiang University (ZJU)}
+  \birthday{1992 December}
+  \home{Zhejiang}
+  % Custom information:
+  % \icontext{<icon>}{<text>}
+  % \iconlink{<icon>}{<link>}{<text>}
+}
+
+\begin{document}
+\makeheader
+
+%======================================================================
+% Summary & Objectives
+%======================================================================
+Highly-motivated Ph.D. in Physics (radio astronomy)
+with good foundations of math and statistics.
+Proficient in data modeling and analysis,
+and enthusiastic about computer and network technologies.
+With 10 years experience in Linux and BSD,
+skilled in Shell, Python, and C programming.
+Passionate about open source and share multiple projects on my
+\link{https://github.com/liweitianux}{GitHub}.
+Meanwhile a \link{https://www.dragonflybsd.org}{DragonFly BSD}
+operating system developer and a contributor to several other
+open source projects.
+
+%======================================================================
+\sectionTitle{Competences \& Languages}{\faWrench}
+%======================================================================
+\begin{competences}[10em]
+  \comptence{Operating Systems}{
+    \icon{\faLinux} Linux (8 years),
+    \icon{\faApple} macOS (4 years)
+  }
+  \comptence{Programming}{%
+    Python, C, Shell, Matlab, Mathematics
+  }
+  \comptence{Tools}{%
+    SSH, Git, Make,Tmux, Vim, \LaTeX
+  }
+  \comptence{Data Analysis}{%
+    Matplotlib, Gnuplot, Matlab, Mathematics
+  }
+  \comptence{\icon{\faLanguage} Languages}{
+    \textbf{English} ---
+      Reading \& Writing (good);
+      Listening \& Speaking (conversant)
+  }
+\end{competences}
+
+%======================================================================
+\sectionTitle{Education}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education%
+    {April 2017}%
+    [June 2020]%
+    {Zhejiang University}%
+    {Department of Physics}%
+    {Physics}%
+    {Ph.D.}
+
+  \separator{0.5ex}
+  \education%
+    {September 2009}%
+    [June 2013]%
+    {Zhejiang University}%
+    {Department of Physics}%
+    {Applied Physics}%
+    {Bachelor's Degree}
+\end{educations}
+
+%======================================================================
+\sectionTitle{Computer Skills}{\faCogs}
+%======================================================================
+\begin{itemize}
+  \item 
+  \item 
+  \item 
+  \item 
+  \item 
+\end{itemize}
+
+%======================================================================
+\sectionTitle{Personal Projects}{\faCode}
+%======================================================================
+\begin{itemize}
+  \item 
+  \item 
+  \item 
+  \item 
+  \item 
+  \item 
+  \item \link{https://github.com/saysin/resume}{\texttt{resume}}:
+    The template and source files (\LaTeX) of \emph{this} resume.
+\end{itemize}
+
+%======================================================================
+\sectionTitle{Research Achievements}{\faAtom}
+%======================================================================
+\begin{itemize}
+  \item Developed the low-frequency radio sky image simulation software:
+    \link{https://github.com/liweitianux/fg21sim}{\texttt{FG21sim}}.
+  \item Developed a suite of utilities to semi-automate the
+    X-ray astronomical data analysis:
+    \link{https://github.com/liweitianux/chandra-acis-analysis}{\texttt{chandra-acis-analysis}}.
+  \item Separated the faint cosmological EoR signal along the frequency
+    dimension using a Convolutional Denoising Autoencoder (CDAE).
+  \item Classified the radio galaxies in the FIRST survey according to
+    morphologies using a Convolutional Neutral Network (CNN).
+  \item Significantly improved the modeling of radio halos,
+    and integrated the instrumental effects of radio interferometers
+    into the simulation pipeline.
+  \item Improved the background modeling in X-ray spectral fitting
+    achieved more accurate and robust fitting results.
+  \item Published 2 first-author and 8 co-authored SCI papers.
+\end{itemize}
+
+%======================================================================
+\sectionTitle{Internships}{\faBriefcase}
+%======================================================================
+\begin{experiences}
+  \experience%
+    [April 2018]%
+    {August 2018}%
+    {Data Engineer @ Leadvisor Technology Inc. (startup company)}%
+    [\begin{itemize}
+      \item Search and scrape product and advertising data from Amazon web
+        (Python, Requests, BeautifulSoup).
+      \item Deployed the Airflow server and database to periodically
+        retrieve product sales and advertising data from Amazon.
+      \item Developed the website (Flask, jQuery) to help customers to
+        optimize their advertising campaigns on Amazon.
+    \end{itemize}]
+
+  \separator{0.5ex}
+  \experience%
+    [July 2013]%
+    {September 2013}%
+    {Web Developer @ 97 Suifang (startup company)}%
+    [\begin{itemize}
+      \item Developed the back-end (Django) to support user registration,
+        data storage and search.
+      \item Developed the front-end (jQuery, AJAX) to visualize the
+        temporal variations of a patient's examination indicators.
+    \end{itemize}]
+\end{experiences}
+
+\end{document}

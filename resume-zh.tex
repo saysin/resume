@@ -1,0 +1,164 @@
+% !TEX TS-program = xelatex
+%% Copyright (c) 2019-2020 Donghui Shen %%<saysin.github.io>
+%% CC BY 4.0 License
+%%
+%% Created: 2019-10-11
+%%
+
+% Chinese version
+\documentclass[zh]{resume}
+
+% Adjust icon size (default: same size as the text)
+\iconsize{\Large}
+
+% File information shown at the footer of the last page
+\fileinfo{%
+  \faCopyright{} 2019--2020, Donghui Shen \hspace{0.5em}
+  \creativecommons{by}{4.0} \hspace{0.5em}
+  \githublink{saysin}{resume} \hspace{0.5em}
+  \faEdit{} \today
+}
+
+\name{栋辉}{沈}
+
+\keywords{Linux, Programming, Python, C, Shell}
+
+%\tagline{\icon{\faBinoculars}工程师}%寻求岗位
+%\tagline{博士研究生}%现在的身份或者职位
+
+\photo{2.5cm}{pic.jpg}
+
+\profile{
+  \mobile{132-1610-7661}
+  \email{saysin@163.com}
+  \github{saysin} \\
+  \degree{物理学 \textbullet 博士}
+  \university{浙江大学}
+  \birthday{1992-12-01}
+  \home{浙江 \textbullet 绍兴}
+  % Custom information:
+  % \icontext{<icon>}{<text>}
+  % \iconlink{<icon>}{<link>}{<text>}
+}
+
+\begin{document}
+\makeheader
+
+%======================================================================
+% Summary & Objectives
+%======================================================================
+{\onehalfspacing\hspace{2em}
+物理学专业（光学方向）博士研究生，有扎实的物理、数学与编程基础，
+擅长光束传输变换理论模拟和光学实验，热衷计算机和网络技术，
+有 8 年的 Linux 和 4年的macOS 使用经验，熟练掌握 Shell、Python 和 C 语言编程。崇尚自由开源的精神，并一直在努力为开源世界贡献自己的力量。
+\par}
+
+%======================================================================
+\sectionTitle{技能和语言}{\faWrench}
+%======================================================================
+\begin{competences}
+  \comptence{操作系统}{%
+    \icon{\faLinux} Linux （8 年），
+    \icon{\faApple} macOS （4 年）
+  }
+  \comptence{编程}{%
+    Python, C, Shell, Matlab, Mathematics
+  }
+  \comptence{工具}{%
+    SSH, Git, Make, Tmux, Vim, \LaTeX
+  }
+  \comptence{数据分析}{%
+	Matplotlib，Gnuplot，Matlab，Mathematics
+  }
+  \comptence{\icon{\faLanguage}语言}{
+    \textbf{英语} --- 读写（优良），听说（日常交流）
+  }
+\end{competences}
+
+%======================================================================
+\sectionTitle{教育背景}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education%
+    {2017.03}%
+    [2020.06]%
+    {浙江大学}%
+    {理学院物理系}%
+    {光学}%
+    {博士}
+
+\separator{0.5ex}
+\education%
+{2015.09}%
+[2017.03]%
+{浙江大学}%
+{理学院物理系}%
+{光学}%
+{硕士}
+
+  \separator{0.5ex}
+  \education%
+    {2011.09}%
+    [2015.06]%
+    {华侨大学}%
+    {信息科学与工程学院}%
+    {应用物理学}%
+    {学士}
+\end{educations}
+
+%======================================================================
+\sectionTitle{计算机技能}{\faCogs}
+%======================================================================
+\begin{itemize}
+  \item 全国计算机等级考试（C语言）二级合格
+  \item 搭建了自己的\link{https://saysin.github.io}{\texttt{blog}}网站
+  \item 在谷歌云搭建了自己的服务器
+  \item 能够熟练的使用商业软件Matlab和Mathematics进行科研中的数值计算，目前正往Python编程转移
+\end{itemize}
+
+%======================================================================
+\sectionTitle{个人项目}{\faCode}
+%======================================================================
+\begin{itemize}
+  \item \link{https://github.com/saysin/resume}{\texttt{resume}}:(\LaTeX)此简历的模板和源文件
+  \item 完成光学实验室的搭建工作并负责管理实验室
+\end{itemize}
+
+%======================================================================
+\sectionTitle{科研成果}{\faAtom}
+%======================================================================
+\begin{itemize}
+  \item 发表 2 篇第一作者SCI 论文
+  \\ 1.光学Top期刊\texttt{OL}\link{}{}
+  \\ 2.光学Top期刊\texttt{OE}
+
+\end{itemize}
+
+%======================================================================
+\sectionTitle{实习经历}{\faBriefcase}
+%======================================================================
+\begin{experiences}
+  \experience%
+    [2018.04]%
+    {2018.08}%
+    {数据工程师 @ 上海领脉网络科技（初创公司）}%
+    [\begin{itemize}
+      \item 从 Amazon 网页搜索并挖取商品与广告信息
+        （Python, Requests, BeautifulSoup）
+      \item 配置 Airflow 服务器和数据库等基础设施，
+        定期从 Amazon 获取产品销售与广告投放等数据
+      \item 开发网站（Flask, jQuery），帮助客户优化 Amazon 广告投放
+    \end{itemize}]
+
+  \separator{0.5ex}
+  \experience%
+    [2013.07]%
+    {2013.09}%
+    {网站开发 @ 97 随访（初创公司）}%
+    [\begin{itemize}
+      \item 后端开发（Django），完成用户注册、数据存储和搜索等功能
+      \item 前端开发（jQuery, AJAX），对患者各项指标随时间的变化进行可视化
+    \end{itemize}]
+\end{experiences}
+
+\end{document}
